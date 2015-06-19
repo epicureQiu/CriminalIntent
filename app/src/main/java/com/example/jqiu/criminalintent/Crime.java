@@ -46,4 +46,14 @@ public class Crime {
         return mId;
     }
 
+    /*
+    * The default implementation of ArrayAdapter<T>.getView(…) relies on toString().
+    * It inflates the layout, finds the correct Crime object,
+    * and then calls toString() on the object to populate the TextView.
+    * */
+    @Override
+    public String toString() {
+        return mTitle;
+    }
+
 }
